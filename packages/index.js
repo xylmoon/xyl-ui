@@ -3,7 +3,7 @@ import Tag from './tag/index'
 import Toast from './toast/index'
 
 import './index.css'
-const version = '0.4.7';
+const version = '0.5.1';
 const components = [
     Button,
     Tag
