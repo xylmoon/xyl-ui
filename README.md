@@ -9,8 +9,8 @@ npm i xyl-ui
 
 ```javascript
 //单独引用
-import { Xylbutton, XylTag , XylToast} from 'xyl-ui'
-Vue.use(Xylbutton)
+import { XylButton, XylTag , XylToast} from 'xyl-ui'
+Vue.use(XylButton)
 Vue.use(XylTag)
 
 XylToast('轻提示')
