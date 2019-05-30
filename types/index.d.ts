@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { VanComponent } from './component';
 
-import { toast } from './toast'
+import { XylToast } from './toast'
 
 export const version: string;
 export function install (vue: typeof Vue): void
@@ -10,5 +10,5 @@ export class XylTag extends VanComponent {}
 
 
 export {
-    toast
+    XylToast
 }

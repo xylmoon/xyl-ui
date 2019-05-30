@@ -1,5 +1,6 @@
 .xyl-tag{
     display: inline-block;
+    text-align: center;
     width: 100px;
     height: 30px;
     line-height: 30px;
@@ -9,6 +10,7 @@
     background: #f8b300;
 }
 .xyl-button{
+    text-align: center;
     display: inline-block;
     width: 100px;
     height: 30px;

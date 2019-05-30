@@ -6,7 +6,6 @@ let XylToastConstructor = Vue.extend(XylToast);
 let instance;
 
 const Toast = function (msg: string) {
-    console.log(1111)
     instance = new XylToastConstructor({
         data: { msg, visible: false }
     });
@@ -14,7 +13,7 @@ const Toast = function (msg: string) {
     document.body.appendChild(instance.$el);
 
     instance.visible = true;
-
+    return instance
 }
 
 export default Toast;

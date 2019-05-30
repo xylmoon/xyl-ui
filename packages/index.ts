@@ -4,7 +4,7 @@ import XylTag from './tag/index'
 import XylToast from './toast/index'
 
 import './index.css'
-const version = '0.2.5';
+const version = '0.2.7';
 
 const components = [
     Xylbutton,
