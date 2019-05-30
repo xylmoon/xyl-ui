@@ -9,11 +9,11 @@ npm i xyl-ui
 
 ```javascript
 //单独引用
-import { XylButton, XylTag , XylToast} from 'xyl-ui'
-Vue.use(XylButton)
-Vue.use(XylTag)
+import { Button, Tag , Toast} from 'xyl-ui'
+Vue.use(Button)
+Vue.use(Tag)
 
-XylToast('轻提示')
+Toast('轻提示')
 
 //全局引用
 import xylui from 'xyl-ui'

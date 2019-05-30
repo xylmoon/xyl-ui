@@ -1,0 +1,35 @@
+.xyl-tag{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    background: #f8b300;
+}
+.xyl-button{
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    background: red;
+}
+.xyl-toast{
+    min-width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    padding:10px 20px;
+    background: #f8b300;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    top:50px;
+    left:50%;
+    transform: translateX(-50%)
+}
