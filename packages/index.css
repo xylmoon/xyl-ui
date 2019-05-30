@@ -18,3 +18,16 @@
     border-radius: 4px;
     background: red;
 }
+.xyl-toast{
+    min-width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    padding:10px 20px;
+    background: #f8b300;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    top:50px;
+    left:50%;
+    transform: translateX(-50%)
+}

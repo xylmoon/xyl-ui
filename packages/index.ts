@@ -1,9 +1,10 @@
 import { VueConstructor } from 'vue/types';
 import Xylbutton from './button/index'
 import XylTag from './tag/index'
+import XylToast from './toast/index'
 
 import './index.css'
-const version = '2.0.0-beta.2';
+const version = '0.2.5';
 
 const components = [
     Xylbutton,
@@ -19,6 +20,7 @@ const install = (Vue: VueConstructor)=> {
     components.map(Component => {
        Vue.use(Component);
     })
+    Vue.prototype.$toast = XylToast
 }
 
 /* istanbul ignore if */
@@ -29,7 +31,8 @@ export {
     install,
     version,
     Xylbutton,
-    XylTag
+    XylTag,
+    XylToast
 }
 export default {
     install,

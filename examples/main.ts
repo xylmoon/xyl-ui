@@ -8,7 +8,6 @@ import store from './store'
 Vue.config.productionTip = false
 import xylui from '../packages/index'
 
-console.log(xylui)
 Vue.use(xylui)
 
 new Vue({

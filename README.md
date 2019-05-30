@@ -9,13 +9,17 @@ npm i xyl-ui
 
 ```javascript
 //单独引用
-import { Xylbutton, XylTag} from 'xyl-ui'
+import { Xylbutton, XylTag , XylToast} from 'xyl-ui'
 Vue.use(Xylbutton)
 Vue.use(XylTag)
+
+XylToast('轻提示')
 
 //全局引用
 import xylui from 'xyl-ui'
 Vue.use(xylui)
+
+
 ```
 
 ### 使用组件
@@ -23,5 +27,8 @@ Vue.use(xylui)
 ```html
 <Xyl-button :msg="msg" />
 <Xyl-tag msg="我是标签" />
+
+this.$toast('轻提示')
+
 ```
 
