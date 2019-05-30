@@ -1,13 +1,12 @@
 import { VueConstructor } from 'vue/types';
-import Xylbutton from './button/index'
+import XylButton from './button/index'
 import XylTag from './tag/index'
 import XylToast from './toast/index'
 
 import './index.css'
-const version = '0.2.7';
-
+const version = '0.4.5';
 const components = [
-    Xylbutton,
+    XylButton,
     XylTag
 ]
 declare global {
@@ -16,9 +15,9 @@ declare global {
     }
 }
 
-const install = (Vue: VueConstructor)=> {
+const install = (Vue: VueConstructor) => {
     components.map(Component => {
-       Vue.use(Component);
+        Vue.use(Component);
     })
     Vue.prototype.$toast = XylToast
 }
@@ -27,14 +26,20 @@ const install = (Vue: VueConstructor)=> {
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
 }
-export {
+
+export default {
     install,
     version,
-    Xylbutton,
+    XylButton,
     XylTag,
     XylToast
 }
-export default {
+export {
     install,
-    version
+    version,
+    XylButton,
+    XylTag,
+    XylToast
 }
+
+

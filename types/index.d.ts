@@ -1,14 +1,15 @@
 import Vue from 'vue';
 import { VanComponent } from './component';
 
-import { XylToast } from './toast'
+import { toast } from './toast'
 
 export const version: string;
-export function install (vue: typeof Vue): void
-export class XylButton extends VanComponent {}
-export class XylTag extends VanComponent {}
 
+export function install(vue: typeof Vue): void
 
-export {
-    XylToast
-}
+export class XylButton extends VanComponent { }
+
+export class XylTag extends VanComponent { }
+
+export const XylToast: toast
+    

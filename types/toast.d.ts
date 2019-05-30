@@ -20,4 +20,3 @@ declare module 'vue/types/vue' {
     }
 }
 
-export const XylToast: toast;
