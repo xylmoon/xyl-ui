@@ -3,7 +3,7 @@ import Tag from './tag/index'
 import Toast from './toast/index'
 
 import './index.css'
-const version = '0.5.1';
+const version = '0.5.9';
 const components = [
     Button,
     Tag
@@ -20,17 +20,14 @@ const install = (Vue) => {
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
 }
-export {
+
+
+export default {
     install,
     version,
     Button,
     Tag,
     Toast
-}
-
-export default {
-    install,
-    version
 }
 
 

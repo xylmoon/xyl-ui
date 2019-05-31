@@ -25,8 +25,8 @@ Vue.use(xylui)
 ### 使用组件
 
 ```html
-<Xyl-button :msg="msg" />
-<Xyl-tag msg="我是标签" />
+<xyl-button :msg="msg" />
+<xyl-tag msg="我是标签" />
 
 this.$toast('轻提示')
 
